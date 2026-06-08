@@ -1,0 +1,14 @@
+@import url('reset.css');
+@import url('colores.css');
+:root{
+    --alturaHeader: 240px;
+}
+header{
+    height: var(--alturaHeader);
+    background-color: blue;
+}
+main{
+    /* hace que el main sea dinamico */
+    min-height: calc(100dvh -340px);
+    background-color: var(--color-primario);
+}
