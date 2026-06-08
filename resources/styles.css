@@ -9,6 +9,15 @@ header{
 }
 main{
     /* hace que el main sea dinamico */
-    min-height: calc(100dvh -340px);
+    min-height: calc(100dvh - var(--alturaHeader));
     background-color: var(--color-primario);
+}
+.paginas{
+    height: 80px;
+    background-color: greenyellow;
+}
+
+.juguetes{
+    min-height: 300px;
+    background-color: rgb(126, 161, 0);
 }
