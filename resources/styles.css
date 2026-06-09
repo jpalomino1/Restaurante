@@ -22,9 +22,24 @@ header{
     height: 60px;
     width: 80%;
     background-color: rgb(255, 255, 255);
+     display: flex;
 
 }
-
+.buscador i{
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(106, 23, 184);
+   
+}
+.buscador button{
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(106, 23, 184);
+}
 main{
     /* hace que el main sea dinamico */
     min-height: calc(100dvh - var(--alturaHeader));
@@ -41,7 +56,8 @@ main{
 }
 .textoBienvenida{
     position: absolute; 
-    top: 60%;
-    left: 10px;
+    bottom: 40px;
+    width: 90%;
+    left: 5%;
 
 }
