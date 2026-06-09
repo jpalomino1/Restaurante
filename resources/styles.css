@@ -40,6 +40,14 @@ header{
     place-items: center;
     background-color: rgb(106, 23, 184);
 }
+/* revisa anidado de clases */
+.buscador input[type="text"]{
+    flex: 1;
+    height: 100%;
+    padding: 0 20px;
+
+
+}
 main{
     /* hace que el main sea dinamico */
     min-height: calc(100dvh - var(--alturaHeader));
