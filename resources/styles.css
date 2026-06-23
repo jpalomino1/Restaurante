@@ -1,71 +1,76 @@
 @import url('reset.css');
 @import url('colores.css');
-:root{
+
+:root {
     --alturaHeader: 240px;
 }
-header{
+
+header {
     position: relative;
-    /* establece un margen limite a los hijos que tenga position absolut */
     height: var(--alturaHeader);
-    background-color: rgb(214, 214, 233);
+    background-color: rgb(111, 111, 243);
 }
 
-.buscador{
-    /* para indicarle  a un elemento con position absolute
-    hay que indicare añ ádre position absolute */
-    
-    /* top o bottom | left o right */
-
-    position: absolute; 
+.buscador {
+    display: flex;
+    position: absolute;
     bottom: -30px;
-    right: 10%;
+    left: 10%;
     height: 60px;
     width: 80%;
-    background-color: rgb(255, 255, 255);
-     display: flex;
+    background-color: rgb(158, 142, 52);
+ 
+input[type="text"] {
+        flex:1;
+        height: 100%;
+        padding: 0 20px;
+    }
+    i {
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        background-color: rgb(116, 91, 91);
+    }
 
-}
-.buscador i{
-    width: 60px;
-    height: 60px;
-    display: grid;
-    place-items: center;
-    background-color: rgb(106, 23, 184);
-   
-}
-.buscador button{
-    width: 60px;
-    height: 60px;
-    display: grid;
-    place-items: center;
-    background-color: rgb(106, 23, 184);
-}
-/* revisa anidado de clases */
-.buscador input[type="text"]{
-    flex: 1;
-    height: 100%;
-    padding: 0 20px;
-
-
-}
-main{
-    /* hace que el main sea dinamico */
-    min-height: calc(100dvh - var(--alturaHeader));
-    background-color: var(--color-primario);
-}
-.paginas{
-    height: 80px;
-    background-color: greenyellow;
+    button {
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        background-color: rgb(255, 255, 255);
+    }
 }
 
-.juguetes{
-    min-height: 300px;
-    background-color: rgb(126, 161, 0);
-}
-.textoBienvenida{
-    position: absolute; 
-    bottom: 40px;
+.textoBienvenida {
+    position: absolute;
+    bottom: 50px;
     width: 90%;
     left: 5%;
+}
 
+main {
+    min-height: calc(100dvh - var(--alturaHeader));
+}
+
+.categorias {
+    height: 80px;
+    padding-top: 45px;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    overflow:auto hidden;
+}
+.item-cate{
+    flex: 0 0 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 0 15px gray;
+    padding: 16px;
+}
+.resto {
+    min-height: 300px;
+    background-color: rgb(209, 15, 226);
 }
