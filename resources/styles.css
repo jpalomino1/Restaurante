@@ -3,12 +3,15 @@
 
 :root {
     --alturaHeader: 240px;
+    --colorPrincipal: #68DABC;
 }
 
 header {
     position: relative;
     height: var(--alturaHeader);
-    background-color: rgb(111, 111, 243);
+    background-image: url('https://tse4.mm.bing.net/th/id/OIP.ncmF-7N2ZEo4wfzxFONoGAExDM?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-size: cover;
+    background-position: center;
 }
 
 .buscador {
@@ -18,19 +21,22 @@ header {
     left: 10%;
     height: 60px;
     width: 80%;
-    background-color: rgb(158, 142, 52);
- 
-input[type="text"] {
-        flex:1;
+    background-color: var(--colorPrincipal);
+    border-radius: 30px;
+    overflow: hidden;
+
+    input[type="text"] {
+        flex: 1;
         height: 100%;
         padding: 0 20px;
     }
+
     i {
         width: 60px;
         height: 60px;
         display: grid;
         place-items: center;
-        background-color: rgb(116, 91, 91);
+        background-color: var(--colorPrincipal);
     }
 
     button {
@@ -38,7 +44,7 @@ input[type="text"] {
         height: 60px;
         display: grid;
         place-items: center;
-        background-color: rgb(255, 255, 255);
+        background-color: white;
     }
 }
 
@@ -47,6 +53,9 @@ input[type="text"] {
     bottom: 50px;
     width: 90%;
     left: 5%;
+    color: white;
+    box-shadow: 0 0 15px rgb(218, 218, 218);
+
 }
 
 main {
@@ -56,21 +65,71 @@ main {
 .categorias {
     height: 80px;
     padding-top: 45px;
-    display:flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    overflow:auto hidden;
+    overflow: auto hidden;
 }
-.item-cate{
+
+.item-cate {
     flex: 0 0 80px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 0 15px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 16px;
 }
-.resto {
-    min-height: 300px;
-    background-color: rgb(209, 15, 226);
+
+.item-cate i {
+    color: rgba(0, 0, 0, 0.459);
+}
+
+.item-cate span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.459);
+}
+
+.MasElegidos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-family: "Open Sans";
+    color: rgba(0, 0, 0, 0.548);
+
+    .fa-solid {
+        color: rgba(0, 0, 0, 0.548);
+        cursor: pointer;
+    }
+
+    hr {
+        width: 10%;
+        background-color: var(--colorPrincipal);
+        height: 3px;
+    }
+
+}
+
+
+.item-articulo {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.548);
+        gap: 5px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
 }
