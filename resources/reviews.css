@@ -1,0 +1,95 @@
+:root {
+    --alturaHeader: 240px;
+    --colorPrincipal: #68DABC;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.icono-izq {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+
+}
+
+.icono-der {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 40px;
+    background-color: var(--colorPrincipal);
+    height: 1px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.producto {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 20px gray;
+
+    img {
+        width: 30%;
+        border-radius: 20px;
+    }
+
+    .descripcion {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 0px 20px 20px 25px;
+        background-color: var(--colorPrincipal);
+
+    }
+
+    .puntuacion {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+}
+
+.navegador {
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    a {
+        padding: 0px 90px;
+        color: rgba(0, 0, 0, 0.295);
+        text-decoration: none;
+
+    }
+}
